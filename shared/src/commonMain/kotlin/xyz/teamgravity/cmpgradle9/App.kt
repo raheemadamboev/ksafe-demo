@@ -14,10 +14,9 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import cmpgradle9.shared.generated.resources.Res
+import cmpgradle9.shared.generated.resources.compose_multiplatform
 import org.jetbrains.compose.resources.painterResource
-
-import cmpgradle9.composeapp.generated.resources.Res
-import cmpgradle9.composeapp.generated.resources.compose_multiplatform
 
 @Composable
 @Preview
