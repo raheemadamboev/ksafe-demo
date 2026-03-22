@@ -3,11 +3,12 @@ plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.compose)
     alias(libs.plugins.compose.compiler)
+    alias(libs.plugins.serialization)
 }
 
 kotlin {
     android {
-        namespace = "xyz.teamgravity.cmpgradle9.shared"
+        namespace = "xyz.teamgravity.ksafedemo.shared"
 
         compileSdk {
             version = release(libs.versions.sdk.compile.get().toInt()) {
@@ -47,6 +48,13 @@ kotlin {
             // lifecycle
             implementation(libs.lifecycle.runtime)
             implementation(libs.lifecycle.viewmodel)
+
+            // serialization
+            implementation(libs.serialization)
+
+            // ksafe
+            implementation(libs.ksafe)
+            implementation(libs.ksafe.compose)
         }
     }
 }

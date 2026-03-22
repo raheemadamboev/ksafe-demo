@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "xyz.teamgravity.cmpgradle9"
+    namespace = "xyz.teamgravity.ksafedemo"
 
     compileSdk {
         version = release(libs.versions.sdk.compile.get().toInt()) {
@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "xyz.teamgravity.cmpgradle9"
+        applicationId = "xyz.teamgravity.ksafedemo"
         minSdk = libs.versions.sdk.min.get().toInt()
         targetSdk = libs.versions.sdk.target.get().toInt()
         versionCode = 1

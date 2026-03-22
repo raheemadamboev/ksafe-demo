@@ -1,4 +1,4 @@
-rootProject.name = "CMPGradle9"
+rootProject.name = "KSafeDemo"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {

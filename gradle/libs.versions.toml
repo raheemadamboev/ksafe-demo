@@ -2,10 +2,12 @@
 
 compose-material3 = "1.10.0-alpha05"
 compose-activity = "1.13.0"
-lifecycle = "2.10.0-beta01"
+lifecycle = "2.10.0"
+serialization = "1.10.0"
+ksafe = "1.7.1"
 
-compose = "1.10.2"
-kotlin = "2.3.10"
+compose = "1.10.3"
+kotlin = "2.3.20"
 android = "9.1.0"
 
 sdk-min = "24"
@@ -24,6 +26,9 @@ compose-material3 = { module = "org.jetbrains.compose.material3:material3", vers
 compose-activity = { module = "androidx.activity:activity-compose", version.ref = "compose-activity" }
 lifecycle-runtime = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "lifecycle" }
 lifecycle-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+ksafe = { module = "eu.anifantakis:ksafe", version.ref = "ksafe" }
+ksafe-compose = { module = "eu.anifantakis:ksafe-compose", version.ref = "ksafe" }
 
 [plugins]
 
@@ -31,4 +36,5 @@ kotlin = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 multiplatform = { id = "com.android.kotlin.multiplatform.library", version.ref = "android" }
 compose = { id = "org.jetbrains.compose", version.ref = "compose" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 android = { id = "com.android.application", version.ref = "android" }
